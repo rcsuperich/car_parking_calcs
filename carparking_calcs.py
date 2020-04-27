@@ -82,7 +82,7 @@ def disabled_parking(spaces, ratio, minimum):
 
 dis_spaces = disabled_parking(car_spaces, dis_perc, mini_dis)
 total_car_parking = car_spaces + dis_spaces
-motorc_spaces = int(round(total_car_parking * (motorb_spc / 100))
+motorc_spaces = int(round(total_car_parking * (motorb_spc / 100)))
 breeam_max = breeam_spaces + dis_spaces
 var_ex = (existing_car_spaces + existing_dis_spaces) -\
     total_car_parking
