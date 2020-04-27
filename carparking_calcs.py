@@ -19,9 +19,9 @@ st.sidebar.markdown("instructions on how to find areas on google\
 consults = st.sidebar.slider("Patient facing rooms",
                              max_value=50, value=10)
 none_clinical_WTE = st.sidebar.slider("Max Non clinical staff at \
-        building at any time:", max_value=30, value=10)
+        building at any time:", max_value=50, value=10)
 clinical_WTE = st.sidebar.slider("Max clinical staff at \
-        building at any time:", max_value=30, value=consults)
+        building at any time:", max_value=50, value=consults)
 existing_car_spaces = st.sidebar.slider(
     "Existing car parking spaces:", max_value=100, value=50)
 existing_dis_spaces = st.sidebar.slider("Existing disabled parking \
