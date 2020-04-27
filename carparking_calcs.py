@@ -72,13 +72,13 @@ car_spaces = int((consults * spc_consult) + (none_clinical_WTE /
 
 
 def disabled_parking(spaces, ratio, minimum):
-    calc_space = spaces * (ratio / 100)
-    if calc_space <= minimum:
-        dis_spaces = int(minimum)
-        return dis_spaces
-    else:
-        dis_spaces = int(round(calc_space))
-        return dis_spaces
+  calc_space = spaces * (ratio / 100)
+  if calc_space <= minimum:
+    dis_spaces = int(minimum)
+    return dis_spaces
+  else:
+    dis_spaces = int(round(calc_space))
+    return dis_spaces
 
 
 dis_spaces = disabled_parking(car_spaces, dis_perc, mini_dis)
@@ -161,9 +161,9 @@ site_size_yk_text = f'The site comprises of {existing_footprint_area}m2 \
         (**{soft_landscaping_per * 100}**%) remaining for soft landscaping.'
 
 if soft_landscaping_per <= 0:
-    result = 'The criteria **will not fit**  on the site'
+  result = 'The criteria **will not fit**  on the site'
 else:
-    result = 'The criteria **will fit** on the site, if the soft landscaping\
+  result = 'The criteria **will fit** on the site, if the soft landscaping\
             acceptable level for local authority'
 
 st.markdown(site_size_yk_text)
