@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 import plotly.graph_objs as go
-from sqlalchemy import create_engine
 
 st.sidebar.markdown("# Required Inputs")
 existing_site_area = st.sidebar.text_input("Existing Site Area m2", value=3000)
